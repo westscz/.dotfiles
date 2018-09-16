@@ -1,0 +1,68 @@
+# ---------------------------------
+# Common aliases
+# ---------------------------------
+
+alias sudo='sudo '                                                # Enable aliases to be sudo’ed
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias home='cd ~'
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dev="cd ~/dev"
+alias config="cd $DOTFILES"
+
+alias l="ls -la"                                                  # List in long format, include dotfiles
+alias ld="ls -ld */"                                              # List in long format, only directories
+
+alias '?=man'
+alias h="history"
+alias reload_shell="source ~/.bashrc"
+
+# List declared aliases, functions, paths
+
+alias aliases="alias | sed 's/=.*//'"                             # List declared aliases
+alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"  # List declared functions
+alias paths='echo -e ${PATH//:/\\n}'                              # List declared paths
+
+# ---------------------------------
+# Apt
+# ---------------------------------
+alias apt-upd='echo "Updating cache..." && sudo apt-get update > /dev/null'
+alias apt-upg='sudo apt-get upgrade'
+
+# ---------------------------------
+# Python virtual env aliases
+# ---------------------------------
+alias venv='virtualenv -p /usr/local/bin/python3 .venv'
+alias vac='source .venv/bin/activate'
+
+# ---------------------------------
+# Miscellaneous
+# ---------------------------------
+alias rpi="sshpass -p 'raspberrypi' ssh pi@192.168.1.102"         #connect to rPI
+alias hdmi="xrandr --output HDMI-1 --auto --right-of LVDS-1"      #connect via HDMI
+alias vga="xrandr --output VGA-1 --auto --right-of LVDS-1"        #connect via VGA
+alias webpng='find ./ -name "*.webp" -exec dwebp {} -o {}.png \;' #webp to png converter
+alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3' #download youtube as mp3
+
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+
+alias afk="xflock4"  # Lock the screen (when going AFK)
+alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+
+
+
+# ---------------------------------
+# Reference:
+# ---------------------------------
+# https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
+# https://github.com/webpro/dotfiles/blob/master/system/.alias
+# http://cb.vu/unixtoolbox.xhtml
+# ---------------------------------
+# Don't make edits below this
+[ -f ".alias.local" ] && source ".alias.local"

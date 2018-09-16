@@ -1,0 +1,20 @@
+name="flatpak"
+arg="install flathub"
+install="$name $arg"
+
+packages=(
+    com.viber.Viber
+)
+
+if test ! $(which $name)
+then
+    echo "Installing a stable version of $name..."
+    sudo add-apt-repository ppa:alexlarsson/flatpak -y
+    sudo apt update
+    sudo apt install flatpak
+    flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
+fi
+
+$install "${packages[@]}"
+
+#alias flatpak-viber="flatpak run com.viber.Viber"

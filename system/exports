@@ -1,0 +1,18 @@
+export PATH_TO_PLAYGROUND="$HOME/Playground"
+export PATH_TO_PROJECTS="$HOME/Projects"
+export EDITOR="Visual Studio Code"
+
+
+export HISTSIZE='32768';                        # Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTFILESIZE="${HISTSIZE}";
+export HISTCONTROL='ignoreboth';                # Omit duplicates and commands that begin with a space from history.
+
+export MANPAGER='less -X';                      # Don’t clear the screen after quitting a manual page.
+
+# ---------------------------------
+# Reference:
+# ---------------------------------
+# https://github.com/mathiasbynens/dotfiles/blob/master/.exports
+# ---------------------------------
+# Don't make edits below this
+[ -f ".exports.local" ] && source ".exports.local"

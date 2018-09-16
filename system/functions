@@ -1,0 +1,69 @@
+# Create a new directory and enter it
+function mk() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# No arguments: `git status`, else acts like `git`
+g() {
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status
+  fi
+}
+
+# This creates a new playground with the name given as a command line arg
+play () {
+	# TODO : redirect io to /dev/null and write custom messages
+	if [ $# -lt 1 ] ; then
+		cd "$PATH_TO_PLAYGROUND" && echo 'In playground'
+	fi
+	mkdir -p $PATH_TO_PLAYGROUND/$1 && cd $PATH_TO_PLAYGROUND/$1
+	echo "In playground $1" 
+}
+
+# Normalize `open` across Linux, macOS, and Windows.
+# This is needed to make the `o` function (see below) cross-platform.
+if [ ! $(uname -s) = 'Darwin' ]; then
+	if grep -q Microsoft /proc/version; then
+		# Ubuntu on Windows using the Linux subsystem
+		alias open='explorer.exe';
+	else
+		alias open='xdg-open';
+	fi
+fi
+
+# `o` with no arguments opens the current directory, otherwise opens the given location
+function o() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}
+
+# `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
+# the `.git` directory, listing directories first. The output gets piped into
+# `less` with options to preserve color and line numbers, unless the output is
+# small enough for one screen.
+function tre() {
+	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+}
+
+function ssh_key(){
+	file="$HOME/.ssh/id_rsa.pub"
+	if [ ! -f "$file" ]; then
+		ssh-keygen -t rsa
+	fi
+
+	cat "$file"
+}
+
+# ---------------------------------
+# Reference:
+# ---------------------------------
+# https://github.com/mathiasbynens/dotfiles/blob/master/.functions
+# https://github.com/nicksp/dotfiles/blob/master/bin/ssh-key
+# ---------------------------------
+# Don't make edits below this
+[ -f ".functions.local" ] && source ".functions.local"

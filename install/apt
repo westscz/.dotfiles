@@ -1,0 +1,39 @@
+name="apt"
+arg="install -y"
+install="$name $arg"
+
+
+function lutris_dependency(){
+    ver=$(lsb_release -sr); if [ $ver != "18.04" -a $ver != "17.10" -a $ver != "17.04" -a $ver != "16.04" ]; then ver=18.04; fi
+    echo "deb http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
+    wget -q http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/Release.key -O- | sudo apt-key add -
+}
+
+repositories=(
+    ppa:dawidd0811/neofetch
+    ppa:nilarimogard/webupd8
+)
+
+packages=(
+    neofetch
+    tree
+    puddletag
+    lutris
+)
+
+if test ! $(which $name)
+then
+    echo "What the hell ?!"
+    return 0
+fi
+
+for repository in "${repositories[@]}"
+do
+   sudo add-apt-repository $repository
+done
+
+lutris_dependency
+
+sudo apt-get update
+
+$install "${packages[@]}"
