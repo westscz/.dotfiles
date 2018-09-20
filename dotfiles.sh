@@ -4,6 +4,7 @@ echo export DOTFILES="$DOTFILES_DIR" > ~/.config_dir
 
 install(){
     create_directories
+    # run_installers
     create_symlinks
 }
 
@@ -13,21 +14,30 @@ create_directories(){
     mkdir -p $HOME/Projects
 }
 
+run_installers(){
+    source $DOTFILES_DIR/install/apt
+}
+
 create_symlinks(){
-    echo "Create symlinks"
-    ln -sf "$DOTFILES_DIR/git/gitconfig" ~/.gitconfig
+    echo "Create shell symlinks"
     ln -sf "$DOTFILES_DIR/system/bashrc" ~/.bashrc
     ln -sf "$DOTFILES_DIR/system/profile" ~/.profile
 
     if [ "$XDG_CURRENT_DESKTOP" == "XFCE" ]
     then
-        echo "XFCE specific symlinks"
-        ln -sf "$DOTFILES_DIR/xfce/xfce4-keyboard-shortcuts.xml" ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-        ln -sf "$DOTFILES_DIR/xfce/xfce4-panel.xml" ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+        echo "Create XFCE specific symlinks"
+        rm -r  ~/.config/xfce4/xfconf/xfce-perchannel-xml
+        ln -sf "$DOTFILES_DIR/xfce/xfce-perchannel-xml" ~/.config/xfce4/xfconf/xfce-perchannel-xml
     fi
 
-    echo "Classifier config file symlink"
-    ln -sf "$DOTFILES_DIR/tools/.classifier-master.conf" ~/
+    echo "Create config files symlinks"
+    ln -sf "$DOTFILES_DIR/config/classifier/.classifier-master.conf" ~/
+
+    ln -sf "$DOTFILES_DIR/config/git/gitconfig" ~/.gitconfig
+
+
+    rm -r ~/.config/terminator
+    ln -sf "$DOTFILES_DIR/config/terminator" ~/.config/terminator
 }
 
 update(){

@@ -6,6 +6,7 @@ packages=(
     classifier
     youtube-dl
     tldr
+    Pygments
 )
 
 if test ! $(which $name)

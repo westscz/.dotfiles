@@ -59,11 +59,27 @@ function ssh_key(){
 	cat "$file"
 }
 
+function cleanup(){
+	echo '-- convert WEBP to PNG'
+	find ~/Downloads -name "*.webp" -exec dwebp {} -o {}.png \; 
+
+	echo '-- run classifier' 
+	classifier -d ~/Downloads
+	rm -r /home/jarek/Downloads/WEBP
+
+	echo '-- empty the trash'
+	gvfs-trash --empty
+}
+
 # ---------------------------------
 # Reference:
 # ---------------------------------
 # https://github.com/mathiasbynens/dotfiles/blob/master/.functions
 # https://github.com/nicksp/dotfiles/blob/master/bin/ssh-key
+#
+# https://github.com/alexanderepstein/Bash-Snippets
+# https://github.com/Bash-it/bash-it
+# https://github.com/stephenturner/oneliners
 # ---------------------------------
 # Don't make edits below this
 [ -f ".functions.local" ] && source ".functions.local"

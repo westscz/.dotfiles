@@ -19,6 +19,9 @@ packages=(
     tree
     puddletag
     lutris
+    htop
+    figlet
+    lolcat
 )
 
 if test ! $(which $name)

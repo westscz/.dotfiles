@@ -1,9 +1,9 @@
-# ---------------------------------
-# Common aliases
-# ---------------------------------
-
+#█▓▒░ COMMON
 alias sudo='sudo '                                                # Enable aliases to be sudo’ed
+alias '?=man'
+alias h="history"
 
+#█▓▒░ CD
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -14,34 +14,35 @@ alias dt="cd ~/Desktop"
 alias dev="cd ~/dev"
 alias config="cd $DOTFILES"
 
+#█▓▒░ LS
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 alias l="ls -la"                                                  # List in long format, include dotfiles
 alias ld="ls -ld */"                                              # List in long format, only directories
+alias ll='ls -alF'
+alias la='ls -A'
+#alias l='ls -CF'
 
-alias '?=man'
-alias h="history"
-alias reload_shell="source ~/.bashrc"
-
-# List declared aliases, functions, paths
-
+#█▓▒░ LISTS 
+#List declared aliases, functions, paths
 alias aliases="alias | sed 's/=.*//'"                             # List declared aliases
 alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"  # List declared functions
 alias paths='echo -e ${PATH//:/\\n}'                              # List declared paths
 
-# ---------------------------------
-# Apt
-# ---------------------------------
+#█▓▒░ APT
 alias apt-upd='echo "Updating cache..." && sudo apt-get update > /dev/null'
 alias apt-upg='sudo apt-get upgrade'
 
-# ---------------------------------
-# Python virtual env aliases
-# ---------------------------------
+#█▓▒░ PYTHON ENV
 alias venv='virtualenv -p /usr/local/bin/python3 .venv'
 alias vac='source .venv/bin/activate'
 
-# ---------------------------------
-# Miscellaneous
-# ---------------------------------
+#█▓▒░ DOTFILES
+alias df_refresh="source ~/.bashrc"
+alias df_config="/usr/share/code/code --unity-launch $DOTFILES &>/dev/null & disown"
+alias df_dir="o $DOTFILES"
+
+#█▓▒░ MISCELLANEOUS
 alias rpi="sshpass -p 'raspberrypi' ssh pi@192.168.1.102"         #connect to rPI
 alias hdmi="xrandr --output HDMI-1 --auto --right-of LVDS-1"      #connect via HDMI
 alias vga="xrandr --output VGA-1 --auto --right-of LVDS-1"        #connect via VGA
@@ -55,13 +56,16 @@ alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([
 alias afk="xflock4"  # Lock the screen (when going AFK)
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
+alias ccat="pygmentize -g"
+alias notebook="/usr/share/code/code --unity-launch ~/Projects/Notebook &>/dev/null & disown"
+
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"' # Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
+
 
 
 # ---------------------------------
 # Reference:
 # ---------------------------------
-# https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
-# https://github.com/webpro/dotfiles/blob/master/system/.alias
 # http://cb.vu/unixtoolbox.xhtml
 # ---------------------------------
 # Don't make edits below this
