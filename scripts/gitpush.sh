@@ -1,0 +1,24 @@
+#! /bin/sh
+#
+# GitPush - Git Helper
+# Source https://github.com/iiPlasma/dots/blob/master/bin/bin/gitpush
+
+# Check if there is unfetched online files
+echo -e "\e[34mChecking if there is an unfetched file from the repository\e[0m"
+git pull
+
+# Add every files in the project folder
+git add --all .
+
+# Add commit message
+echo -e "\e[33mWrite your commit comment!\e[0m"
+read -e COMMENT
+
+# Add some details to commit message
+TIME=$(date +"%a %d")
+git commit -m "${TIME}: $COMMENT"
+
+# Push the local files and tags to github
+git push origin --tags
+git push -u origin master
+echo -e "\e[35mDone!\e[0m"
