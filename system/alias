@@ -39,7 +39,7 @@ alias vac='source .venv/bin/activate'
 
 #█▓▒░ DOTFILES
 alias df_refresh="source ~/.bashrc"
-alias df_config="/usr/share/code/code --unity-launch $DOTFILES &>/dev/null & disown"
+alias df_config="vscode $DOTFILES &>/dev/null & disown"
 alias df_dir="o $DOTFILES"
 
 #█▓▒░ MISCELLANEOUS

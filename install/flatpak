@@ -1,3 +1,5 @@
+#/bin/bash
+
 name="flatpak"
 arg="install flathub"
 install="$name $arg"
@@ -11,10 +13,11 @@ then
     echo "Installing a stable version of $name..."
     sudo add-apt-repository ppa:alexlarsson/flatpak -y
     sudo apt update
-    sudo apt install flatpak
+    sudo apt install -y flatpak
     flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
 fi
 
 $install "${packages[@]}"
 
 #alias flatpak-viber="flatpak run com.viber.Viber"
+# add symlink to /usr/bin

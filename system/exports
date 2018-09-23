@@ -1,6 +1,7 @@
 export PATH_TO_PLAYGROUND="$HOME/Playground"
 export PATH_TO_PROJECTS="$HOME/Projects"
 export EDITOR="vim"
+export WEBBROWSER="chromium"
 
 export PATH=$PATH":$DOTFILES/scripts"           # This allows me to run my own scripts from
 

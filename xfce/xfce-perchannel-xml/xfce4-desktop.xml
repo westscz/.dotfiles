@@ -15,13 +15,13 @@
   <property name="backdrop" type="empty">
     <property name="screen0" type="empty">
       <property name="monitor0" type="empty">
-        <property name="image-path" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
+        <property name="image-path" type="string" value="/media/jarek/Work [HDD]/wrzesien_2018_bckp/6137182928_3fa8c655e4_o.jpg"/>
         <property name="image-style" type="empty"/>
         <property name="image-show" type="empty"/>
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
+          <property name="image-style" type="int" value="6"/>
+          <property name="last-image" type="string" value="/media/jarek/Work [HDD]/wrzesien_2018_bckp/6137182928_3fa8c655e4_o.jpg"/>
           <property name="color1" type="array">
             <value type="uint" value="7848"/>
             <value type="uint" value="7848"/>
@@ -56,6 +56,7 @@
       </property>
     </property>
     <property name="single-workspace-mode" type="bool" value="false"/>
+    <property name="single-workspace-number" type="int" value="0"/>
   </property>
   <property name="last" type="empty">
     <property name="window-width" type="int" value="584"/>

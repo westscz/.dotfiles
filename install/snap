@@ -13,10 +13,10 @@ packages=(
 if test ! $(which $name)
 then
     echo "Installing a stable version of $name..."
-    sudo apt install snapd
+    sudo apt install snapd -y
 fi
 
 for package in "${packages[@]}"
 do
-   $install $package
+   sudo $install $package
 done

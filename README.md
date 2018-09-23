@@ -27,6 +27,8 @@
 - [ ] Make something awesome with panels! `xfconf-query` will help
 - [ ] Some auto push configuration script
 - [ ] Merge `Flat Remix` and `La Capitaine` icons
+- [ ] Git Update (https://github.com/Blackhippy/Dotfiles/blob/master/scripts/gitupdate.sh)
+- [ ] Everything update
 - [ ] TBD
 
 # Credits

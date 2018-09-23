@@ -1,4 +1,4 @@
-name="apt"
+name="apt-get"
 arg="install -y"
 install="$name $arg"
 
@@ -12,6 +12,7 @@ function lutris_dependency(){
 repositories=(
     ppa:dawidd0811/neofetch
     ppa:nilarimogard/webupd8
+    ppa:qbittorrent-team/qbittorrent-stable
 )
 
 packages=(
@@ -22,6 +23,9 @@ packages=(
     htop
     figlet
     lolcat
+    terminator
+    qbittorrent
+    calibre
 )
 
 if test ! $(which $name)
@@ -32,11 +36,13 @@ fi
 
 for repository in "${repositories[@]}"
 do
-   sudo add-apt-repository $repository
+   sudo add-apt-repository $repository -y
 done
 
-lutris_dependency
+#lutris_dependency
 
 sudo apt-get update
 
-$install "${packages[@]}"
+sudo $install "${packages[@]}"
+
+# check if all was installed using which

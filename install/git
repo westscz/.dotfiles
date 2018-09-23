@@ -1,2 +1,15 @@
-# TODO: https://gitlab.com/hesperos/napi
-# TODO: 
+name="git"
+arg="clone"
+install="$name $arg"
+
+packages=(
+    https://gitlab.com/hesperos/napi
+)
+
+if test ! $(which $name)
+then
+    echo "Installing a stable version of $name..."
+    sudo apt install git -y
+fi
+
+$install "${packages[@]}" 

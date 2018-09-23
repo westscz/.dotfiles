@@ -12,7 +12,7 @@ packages=(
 if test ! $(which $name)
 then
     echo "Installing a stable version of $name..."
-    echo #TODO: PIP installer
+    sudo apt install python-pip -y
 fi
 
 $install "${packages[@]}"

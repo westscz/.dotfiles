@@ -18,6 +18,14 @@ run_installers(){
     source $DOTFILES_DIR/install/apt
 }
 
+install_theme(){
+    echo "Install fonts"
+    sudo cp -r -a "$DOTFILES_DIR/theme/fonts/." /usr/share/fonts/
+
+    echo "Install icons"
+    sudo cp -r -a "$DOTFILES_DIR/theme/icons/." /usr/share/icons/
+}
+
 create_symlinks(){
     echo "Create shell symlinks"
     ln -sf "$DOTFILES_DIR/system/bashrc" ~/.bashrc
@@ -30,18 +38,19 @@ create_symlinks(){
         ln -sf "$DOTFILES_DIR/xfce/xfce-perchannel-xml" ~/.config/xfce4/xfconf/xfce-perchannel-xml
     fi
 
+    #CREATE only if not exist
     echo "Create config files symlinks"
     ln -sf "$DOTFILES_DIR/config/classifier/.classifier-master.conf" ~/
 
     ln -sf "$DOTFILES_DIR/config/git/gitconfig" ~/.gitconfig
 
-
+    #ADD Only if which(terminator) == True
     rm -r ~/.config/terminator
     ln -sf "$DOTFILES_DIR/config/terminator" ~/.config/terminator
 }
 
 update(){
-    echo TODO: Update files in .dotfile repo if symlinks are removed
+    echo TBD
     return 0
 }
 
