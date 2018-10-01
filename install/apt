@@ -26,6 +26,8 @@ packages=(
     terminator
     qbittorrent
     calibre
+    vim
+    gvfs-bin
 )
 
 if test ! $(which $name)

@@ -59,7 +59,14 @@ function ssh_key(){
 	cat "$file"
 }
 
+function update(){
+	sudo apt update
+	sudo apt full-upgrade -y
+	snap refresh
+}
+
 function cleanup(){
+	# https://www.maketecheasier.com/8-ways-to-maintain-a-clean-lean-ubuntu-machine/
 	echo '-- convert WEBP to PNG'
 	find ~/Downloads -name "*.webp" -exec dwebp {} -o {}.png \; 
 
@@ -68,7 +75,13 @@ function cleanup(){
 	rm -r /home/jarek/Downloads/WEBP
 
 	echo '-- empty the trash'
-	gvfs-trash --empty
+	gio trash --empty
+
+	echo '-- apt cleanup'
+	sudo apt autoremove
+	sudo apt autoclean
+	sudo apt-get clean
+
 }
 
 # ---------------------------------
