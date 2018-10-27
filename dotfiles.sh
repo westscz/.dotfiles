@@ -4,7 +4,7 @@ echo export DOTFILES="$DOTFILES_DIR" > ~/.config_dir
 
 install(){
     create_directories
-    # run_installers
+    run_installers
     create_symlinks
 }
 
@@ -15,7 +15,18 @@ create_directories(){
 }
 
 run_installers(){
-    source $DOTFILES_DIR/install/apt
+    installers=(
+        apt
+        flatpak
+        snap
+        pip
+        git
+    )
+
+    for installer in "${installers[@]}"
+    do
+        source $DOTFILES_DIR/install/$installer
+    done
 }
 
 install_theme(){
@@ -47,6 +58,13 @@ create_symlinks(){
     #ADD Only if which(terminator) == True
     rm -r ~/.config/terminator
     ln -sf "$DOTFILES_DIR/config/terminator" ~/.config/terminator
+
+    rm -r ~/.PyCharm*/config/options
+    ln -sf "$DOTFILES_DIR/config/pycharm/options" ~/.PyCharm*/config
+
+    rm -r ~/.config/Code/User
+    ln -sf "$DOTFILES_DIR/config/vscode/User" ~/.config/Code/
+
 }
 
 update(){

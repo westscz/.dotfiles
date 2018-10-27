@@ -11,6 +11,7 @@
     <property name="click_to_focus" type="empty"/>
     <property name="cycle_apps_only" type="empty"/>
     <property name="cycle_draw_frame" type="empty"/>
+    <property name="cycle_preview" type="bool" value="true"/>
     <property name="double_click_distance" type="empty"/>
     <property name="double_click_time" type="empty"/>
     <property name="focus_delay" type="empty"/>
@@ -47,15 +48,19 @@
     <property name="title_vertical_offset_inactive" type="empty"/>
     <property name="urgent_blink" type="empty"/>
     <property name="use_compositing" type="empty"/>
-    <property name="workspace_count" type="empty"/>
-    <property name="workspace_names" type="empty"/>
+    <property name="workspace_count" type="int" value="1"/>
+    <property name="workspace_names" type="array">
+      <value type="string" value=":D"/>
+      <value type="string" value="2"/>
+      <value type="string" value="3"/>
+      <value type="string" value="4"/>
+    </property>
     <property name="wrap_resistance" type="empty"/>
     <property name="wrap_windows" type="empty"/>
     <property name="wrap_workspaces" type="empty"/>
     <property name="borderless_maximize" type="bool" value="true"/>
     <property name="cycle_hidden" type="bool" value="true"/>
     <property name="cycle_minimum" type="bool" value="true"/>
-    <property name="cycle_preview" type="bool" value="true"/>
     <property name="cycle_tabwin_mode" type="int" value="0"/>
     <property name="cycle_workspaces" type="bool" value="false"/>
     <property name="double_click_action" type="string" value="maximize"/>

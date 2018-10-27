@@ -1,0 +1,9 @@
+com.viber.Viber/x86_64/stable	system,current
+de.wolfvollprecht.UberWriter/x86_64/stable	system,current
+org.freedesktop.Platform.VAAPI.Intel/x86_64/1.6	system,runtime
+org.freedesktop.Platform.VAAPI.Intel/x86_64/18.08	system,runtime
+org.freedesktop.Platform.ffmpeg/x86_64/1.6	system,runtime
+org.freedesktop.Platform.html5-codecs/x86_64/18.08	system,runtime
+org.freedesktop.Platform/x86_64/18.08	system,runtime
+org.gnome.Platform/x86_64/3.28	system,runtime
+org.gtk.Gtk3theme.Greybird/x86_64/3.22	system,runtime

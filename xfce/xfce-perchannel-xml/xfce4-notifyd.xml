@@ -8,7 +8,9 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="nm-applet"/>
+      <value type="string" value="notify-send"/>
       <value type="string" value="qBittorrent"/>
+      <value type="string" value="Spotify"/>
       <value type="string" value="Terminator"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="thunar-volman"/>

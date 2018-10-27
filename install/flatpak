@@ -5,7 +5,8 @@ arg="install flathub"
 install="$name $arg"
 
 packages=(
-    com.viber.Viber
+    com.viber.Viber,
+    de.wolfvollprecht.UberWriter
 )
 
 if test ! $(which $name)

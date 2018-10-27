@@ -15,19 +15,24 @@
   <property name="backdrop" type="empty">
     <property name="screen0" type="empty">
       <property name="monitor0" type="empty">
-        <property name="image-path" type="string" value="/home/jarek/Downloads/clean up/20171226-P1210086.jpg"/>
+        <property name="image-path" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
         <property name="image-style" type="empty"/>
         <property name="image-show" type="empty"/>
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="6"/>
-          <property name="last-image" type="string" value="/home/jarek/Downloads/clean up/20171226-P1210086.jpg"/>
+          <property name="last-image" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
           <property name="color1" type="array">
             <value type="uint" value="7848"/>
             <value type="uint" value="7848"/>
             <value type="uint" value="7848"/>
             <value type="uint" value="65535"/>
           </property>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
         </property>
       </property>
       <property name="monitor1" type="empty">
@@ -38,6 +43,11 @@
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/jarek/Pictures/20171001-P1200036.jpg"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
         </property>
       </property>
       <property name="monitor2" type="empty">

@@ -38,7 +38,7 @@ alias venv='virtualenv -p /usr/local/bin/python3 .venv'
 alias vac='source .venv/bin/activate'
 
 #█▓▒░ DOTFILES
-alias df_refresh="source ~/.bashrc"
+alias df_update="source ~/.bashrc"
 alias df_config="$EDITOR $DOTFILES &>/dev/null & disown"
 alias df_dir="o $DOTFILES"
 
@@ -61,7 +61,33 @@ alias notebook="$EDITOR ~/Notebook &>/dev/null & disown"
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"' # Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
 
+# searches the history for a command
+# it is handy in combination with !<history-number> ;)
+alias hg="history | grep" #<search term>
 
+# executes the last command as sudo
+alias please='sudo $(fc -ln -1)'
+
+# ping google-dns server to check if you have a connection outwards
+alias 8888="ping 8.8.8.8"
+
+# shows a nice in-terminal forecast for berlin
+alias weather="curl wttr.in/wroclaw"
+
+# replaces all spaces in the filenames of the cwd with underscores
+alias underscore="rename 'y/ /_/' *" # replaces all spaces in filenames in the cwd with underscores
+
+# commit with a random message
+# don't use this at work ;)
+alias rancommit="git commit -m \"\$(curl -s http://whatthecommit.com/index.txt)\"" # commits with a random commit message
+
+
+
+
+#█▓▒░ Apps shortcuts
+
+alias wifi='nmtui'
+alias sl='ranger'
 
 # ---------------------------------
 # Reference:

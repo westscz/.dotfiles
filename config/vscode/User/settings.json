@@ -1,0 +1,9 @@
+{
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "git.enableSmartCommit": true,
+    "latex-workshop.view.pdf.viewer": "browser",
+    "git.autofetch": true,
+    "vsnotes.defaultNotePath": "/home/jarek/Notebook",
+    "workbench.colorTheme": "Dracula At Night",
+    "workbench.activityBar.visible": true
+}

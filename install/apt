@@ -28,6 +28,10 @@ packages=(
     calibre
     vim
     gvfs-bin
+    ranger
+    webp
+    gparted
+    cmake
 )
 
 if test ! $(which $name)

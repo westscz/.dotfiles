@@ -59,10 +59,13 @@ function ssh_key(){
 	cat "$file"
 }
 
-function update(){
-	sudo apt update
-	sudo apt full-upgrade -y
-	snap refresh
+# https://routley.io/tech/2017/11/23/logbook.html
+# Update: https://dev.to/luke/using-a-text-editor-for-task-tracking-ckf
+function logbook() {
+	DATE=$(date '+%Y-%m-%d')
+	FPATH=~/Notebook/logbook/$DATE.md
+	echo -e "# $DATE\n\n" >> $FPATH 
+    vim $FPATH
 }
 
 function cleanup(){
@@ -81,7 +84,36 @@ function cleanup(){
 	sudo apt autoremove
 	sudo apt autoclean
 	sudo apt-get clean
+}
 
+# update all packages
+function update(){
+	sudo apt update
+	sudo apt full-upgrade -y
+	flatpak update --assumeyes
+	sudo snap refresh
+}
+
+# save current installed packages to $DOTFILES/current directory
+function current(){
+	installers=(
+		snap
+		flatpak
+		pip
+	)
+
+	for installer in "${installers[@]}"
+	do
+	sudo $installer list > $DOTFILES/current/$installer.md
+	done
+
+	apt list --installed > $DOTFILES/current/apt.md
+	code --list-extensions > $DOTFILES/current/vscode.md
+}
+
+# create a copy of a file/directory with appended .backup
+function backup() { #<filename>
+    cp $1{,.backup};
 }
 
 # ---------------------------------
