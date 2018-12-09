@@ -11,6 +11,7 @@
             <root url="file:///usr/lib/python3.6" type="simple" />
             <root url="file:///usr/lib/python3.6/lib-dynload" type="simple" />
             <root url="file://$USER_HOME$/.local/lib/python3.6/site-packages" type="simple" />
+            <root url="file://$USER_HOME$/.local/lib/python3.6/site-packages/LlameDL-0.1.0-py3.6.egg" type="simple" />
             <root url="file:///usr/local/lib/python3.6/dist-packages" type="simple" />
             <root url="file:///usr/lib/python3/dist-packages" type="simple" />
             <root url="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1247971763" type="simple" />

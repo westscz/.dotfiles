@@ -1,3 +1,5 @@
+#! /bin/sh
+
 # Create a new directory and enter it
 function mk() {
   mkdir -p "$@" && cd "$@"
@@ -19,7 +21,7 @@ play () {
 		cd "$PATH_TO_PLAYGROUND" && echo 'In playground'
 	fi
 	mkdir -p $PATH_TO_PLAYGROUND/$1 && cd $PATH_TO_PLAYGROUND/$1
-	echo "In playground $1" 
+	echo "In playground $1"
 }
 
 # Normalize `open` across Linux, macOS, and Windows.
@@ -64,16 +66,45 @@ function ssh_key(){
 function logbook() {
 	DATE=$(date '+%Y-%m-%d')
 	FPATH=~/Notebook/logbook/$DATE.md
-	echo -e "# $DATE\n\n" >> $FPATH 
+	echo -e "# $DATE\n\n" >> $FPATH
     vim $FPATH
+}
+
+# Usage: extract <file>
+# Description: extracts archived files / mounts disk images
+# Note: .dmg/hdiutil is macOS-specific.
+#
+# credit: http://nparikh.org/notes/zshrc.txt
+extract () {
+    if [ -f $1 ]; then
+        case $1 in
+            *.tar.bz2)  tar -jxvf $1                        ;;
+            *.tar.gz)   tar -zxvf $1                        ;;
+            *.bz2)      bunzip2 $1                          ;;
+            *.dmg)      hdiutil mount $1                    ;;
+            *.gz)       gunzip $1                           ;;
+            *.tar)      tar -xvf $1                         ;;
+            *.tbz2)     tar -jxvf $1                        ;;
+            *.tgz)      tar -zxvf $1                        ;;
+            *.zip)      unzip $1                            ;;
+            *.ZIP)      unzip $1                            ;;
+            *.pax)      cat $1 | pax -r                     ;;
+            *.pax.Z)    uncompress $1 --stdout | pax -r     ;;
+            *.rar)      unrar x $1                          ;;
+            *.Z)        uncompress $1                       ;;
+            *)          echo "'$1' cannot be extracted/mounted via extract()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
 }
 
 function cleanup(){
 	# https://www.maketecheasier.com/8-ways-to-maintain-a-clean-lean-ubuntu-machine/
 	echo '-- convert WEBP to PNG'
-	find ~/Downloads -name "*.webp" -exec dwebp {} -o {}.png \; 
+	find ~/Downloads -name "*.webp" -exec dwebp {} -o {}.png \;
 
-	echo '-- run classifier' 
+	echo '-- run classifier'
 	classifier -d ~/Downloads
 	rm -r /home/jarek/Downloads/WEBP
 
@@ -114,6 +145,15 @@ function current(){
 # create a copy of a file/directory with appended .backup
 function backup() { #<filename>
     cp $1{,.backup};
+}
+
+# -- use case
+# $ ls -l | nline 5
+function nline {
+    [ -x $1 ] && NLINES=2 || NLINES=$1
+    {
+        awk '{ if (NR%'$NLINES'==0) { print "\033[1;44m" $0 "\033[0m" } else { print $0} }'
+    }
 }
 
 # ---------------------------------

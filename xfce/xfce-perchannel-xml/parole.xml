@@ -11,18 +11,18 @@
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/media/jarek/Media [HDD]/Music/_VA/2017"/>
+    <property name="last-used-media" type="string" value="/home/jarek/Downloads"/>
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="true"/>
-    <property name="width" type="int" value="1366"/>
-    <property name="height" type="int" value="723"/>
+    <property name="width" type="int" value="810"/>
+    <property name="height" type="int" value="470"/>
   </property>
   <property name="audio" type="empty">
-    <property name="volume" type="int" value="100"/>
+    <property name="volume" type="int" value="61"/>
   </property>
   <property name="playlist" type="empty">
-    <property name="show-playlist" type="bool" value="true"/>
+    <property name="show-playlist" type="bool" value="false"/>
     <property name="repeat" type="bool" value="true"/>
   </property>
 </channel>

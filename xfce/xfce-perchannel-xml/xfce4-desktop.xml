@@ -31,8 +31,8 @@
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
+          <property name="image-style" type="int" value="6"/>
+          <property name="last-image" type="string" value="/home/jarek/Pictures/file.jpeg"/>
         </property>
       </property>
       <property name="monitor1" type="empty">

@@ -1,9 +1,10 @@
 Name               Version                 Rev   Tracking  Publisher     Notes
-chromium           70.0.3538.67            506   stable    canonical✓    -
-core               16-2.35.4               5662  stable    canonical✓    core
-gtk-common-themes  0.1                     701   stable    canonical✓    -
-polar-bookshelf    1.0.6                   14    stable    inputneuron   -
-pycharm-community  2018.2.4                85    stable    jetbrains✓    classic
-spotify            1.0.89.313.g34a58dea-5  21    stable    spotify✓      -
+chromium           70.0.3538.110           516   stable    canonical✓    -
+core               16-2.36.1               5897  stable    canonical✓    core
+core18             18                      442   stable    canonical✓    base
+gtk-common-themes  0.1-4-g88bc1b2          818   stable    canonical✓    -
+polar-bookshelf    1.1.1                   22    stable    inputneuron   -
+pycharm-community  2018.3.1                103   stable    jetbrains✓    classic
+spotify            1.0.94.262.g3d5c231c-9  28    stable    spotify✓      -
 vlc                3.0.4                   555   stable    videolan✓     -
-vscode             1.28.2-1539735992       64    stable    snapcrafters  classic
+vscode             1.29.1-1542309157       69    stable    snapcrafters  classic

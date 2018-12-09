@@ -1,10 +1,14 @@
 <application>
   <component name="PropertiesComponent">
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6101695" />
     <property name="Copy.OpenInEditor" value="true" />
     <property name="Default.savedEditorTheme" value="_@user_Default" />
     <property name="ExpandBeforeRunStepsPanel" value="true" />
     <property name="ExpandRunDashboardTypesPanel" value="false" />
-    <property name="OpenOrAttachDialog.OpenMode" value="replace" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="OpenOrAttachDialog.OpenMode" value="new" />
+    <property name="PLUGIN_FILTER" value="save action&#10;key prom&#10;Presenta" />
     <property name="PyCharm.InitialConfiguration" value="true" />
     <property name="PyCharm.InitialConfiguration.V2" value="true" />
     <property name="PyCharm.InitialConfiguration.V3" value="true" />
@@ -13,9 +17,11 @@
     <property name="PyCharm.InitialConfiguration.V6" value="true" />
     <property name="PyCharm.InitialConfiguration.V7" value="true" />
     <property name="PyCharm.initialConfigurationShown" value="true" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/Projects/Maxdila&#10;/home/jarek/Projects/AutomateBoringStuff&#10;/home/jarek/Playground" />
-    <property name="file.gist.reindex.count" value="4343" />
+    <property name="SettingsSearchHistory" value="Plugins" />
+    <property name="SplitFileEditor.Proportion" value="0.6858586" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Projects/llameDL&#10;/home/jarek/Projects/Maxdila&#10;/home/jarek/Projects/AutomateBoringStuff&#10;/home/jarek/Playground" />
+    <property name="file.gist.reindex.count" value="5259" />
     <property name="fileTypeChangedCounter" value="1" />
-    <property name="lastTip" value="8" />
+    <property name="lastTip" value="11" />
   </component>
 </application>

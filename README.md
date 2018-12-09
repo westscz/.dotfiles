@@ -1,9 +1,9 @@
-    ▄▄███▄▄·██╗  ██╗ ██████╗ ███╗   ███╗███████╗    ██╗         
+    ▄▄███▄▄·██╗  ██╗ ██████╗ ███╗   ███╗███████╗    ██╗
     ██╔════╝██║  ██║██╔═══██╗████╗ ████║██╔════╝   ██╔╝   ▄ ██╗▄
     ███████╗███████║██║   ██║██╔████╔██║█████╗    ██╔╝     ████╗
     ╚════██║██╔══██║██║   ██║██║╚██╔╝██║██╔══╝   ██╔╝     ▀╚██╔▀
-    ███████║██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗██╔╝   ██╗  ╚═╝ 
-    ╚═▀▀▀══╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝    ╚═╝      
+    ███████║██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗██╔╝   ██╗  ╚═╝
+    ╚═▀▀▀══╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝    ╚═╝
 
 # You’re The King Of Your Castle! [ under development ]
 
@@ -53,11 +53,17 @@
     - [ ] https://unix.stackexchange.com/questions/48456/xfce-send-window-to-other-monitor-on-keystroke
     - [ ] https://github.com/jc00ke/move-to-next-monitor/blob/master/move-to-next-monitor
 - [ ] https://haydenjames.io/htop-heres-how-to-customize-it/
-- [ ] Check "Alfred" alternative
+- [x] Check "Alfred" alternative
     - [ ] https://dev.to/gksander/breaking-up-with-my-mouse-mac-edition-49md
     - [ ] https://medium.com/curiouscaloo/macos-to-ubuntu-part1-alfred-replacement-7864b4d26397
     - [ ] https://albertlauncher.github.io/docs/installing/
 - [ ] Save actual instaled packets to files
+- [ ] NCMPCPP
+    - [ ] https://gist.github.com/klorax/dc1bcc21c76a79becbb6c1ba01ce4c68
+- [ ] nnn
+    - [ ] https://github.com/jarun/nnn
+- [ ] Bat-> A new Cat https://github.com/sharkdp/bat
+- [ ] Fd -> A new find https://github.com/sharkdp/fd
 
 # Credits
 

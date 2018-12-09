@@ -48,10 +48,10 @@
     <property name="title_vertical_offset_inactive" type="empty"/>
     <property name="urgent_blink" type="empty"/>
     <property name="use_compositing" type="empty"/>
-    <property name="workspace_count" type="int" value="1"/>
+    <property name="workspace_count" type="int" value="2"/>
     <property name="workspace_names" type="array">
-      <value type="string" value=":D"/>
-      <value type="string" value="2"/>
+      <value type="string" value="Default"/>
+      <value type="string" value="Second"/>
       <value type="string" value="3"/>
       <value type="string" value="4"/>
     </property>

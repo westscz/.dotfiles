@@ -1,3 +1,5 @@
+#! /bin/sh
+
 #█▓▒░ COMMON
 alias sudo='sudo '                                                # Enable aliases to be sudo’ed
 alias '?=man'
@@ -23,7 +25,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 #alias l='ls -CF'
 
-#█▓▒░ LISTS 
+#█▓▒░ LISTS
 #List declared aliases, functions, paths
 alias aliases="alias | sed 's/=.*//'"                             # List declared aliases
 alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"  # List declared functions
@@ -57,6 +59,7 @@ alias afk="xflock4"  # Lock the screen (when going AFK)
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 alias ccat="pygmentize -g"
+alias ffind="fzf --preview='pygmentize -g {}'"
 alias notebook="$EDITOR ~/Notebook &>/dev/null & disown"
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"' # Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
@@ -81,8 +84,9 @@ alias underscore="rename 'y/ /_/' *" # replaces all spaces in filenames in the c
 # don't use this at work ;)
 alias rancommit="git commit -m \"\$(curl -s http://whatthecommit.com/index.txt)\"" # commits with a random commit message
 
+alias code="$EDITOR ."
 
-
+alias restart='sudo shutdown -r'
 
 #█▓▒░ Apps shortcuts
 

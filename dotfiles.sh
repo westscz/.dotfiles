@@ -10,6 +10,7 @@ install(){
 
 create_directories(){
     echo "Create directories"
+    mkdir -p $HOME/.virtualenvs
     mkdir -p $HOME/Playground
     mkdir -p $HOME/Projects
 }

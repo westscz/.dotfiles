@@ -6,13 +6,37 @@
     <location key="#com.intellij.execution.impl.EditConfigurationsDialog.1366.0.1680.1050" x="1664" y="183" />
     <location key="FileChooserDialogImpl.1366.0.1680.1050" x="1989" y="283" />
     <location key="SettingsEditor.1366.0.1680.1050" x="1695" y="173" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1366.768" x="376" y="222" />
+    <location key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1366.768" x="328" y="21" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1366.768" x="141" y="53" />
+    <location key="SettingsEditor.0.0.1366.768" x="172" y="42" />
+    <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1366.768" x="442" y="200" />
+    <location key="#feedly_hlep.0.0.1366.768" x="440" y="21" />
+    <location key="SettingsEditor.0.0.3046.1050" x="172" y="42" />
+    <location key="#Browse_Repositories.0.0.1366.768" x="262" y="50" />
+    <location key="Vcs.Push.Dialog.1366.0.1680.1050" x="1885" y="247" />
+    <location key="CommitChangelistDialog2.1366.0.1680.1050" x="1853" y="116" />
+    <location key="#com.intellij.ide.util.MemberChooser.1366.0.1680.1050" x="2014" y="244" />
     <size key="FileChooserDialogImpl.0.0.1366.768" width="426" height="479" />
-    <size key="GridCell.Tab.0.left.1366.0.1680.1050" width="1657" height="262" />
-    <size key="GridCell.Tab.0.center.1366.0.1680.1050" width="1657" height="262" />
-    <size key="GridCell.Tab.0.right.1366.0.1680.1050" width="1657" height="262" />
-    <size key="GridCell.Tab.0.bottom.1366.0.1680.1050" width="1657" height="262" />
+    <size key="GridCell.Tab.0.left.1366.0.1680.1050" width="1626" height="278" />
+    <size key="GridCell.Tab.0.center.1366.0.1680.1050" width="1626" height="278" />
+    <size key="GridCell.Tab.0.right.1366.0.1680.1050" width="1626" height="278" />
+    <size key="GridCell.Tab.0.bottom.1366.0.1680.1050" width="1626" height="278" />
     <size key="FileChooserDialogImpl.1366.0.1680.1050" width="426" height="479" />
     <size key="#com.intellij.execution.impl.EditConfigurationsDialog.1366.0.1680.1050" width="1084" height="686" />
     <size key="SettingsEditor.1366.0.1680.1050" width="1014" height="700" />
+    <size key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1366.768" width="694" height="742" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1320" height="269" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1320" height="269" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1320" height="269" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1320" height="269" />
+    <size key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1366.768" width="1084" height="686" />
+    <size key="SettingsEditor.0.0.1366.768" width="1014" height="700" />
+    <size key="#com.intellij.fileTypes.FileTypeChooser.0.0.1366.768" width="474" height="384" />
+    <size key="#feedly_hlep.0.0.1366.768" width="478" height="742" />
+    <size key="SettingsEditor.0.0.3046.1050" width="1014" height="700" />
+    <size key="#Browse_Repositories.0.0.1366.768" width="826" height="679" />
+    <size key="CommitChangelistDialog2.1366.0.1680.1050" width="698" height="814" />
+    <size key="#com.intellij.ide.util.MemberChooser.1366.0.1680.1050" width="376" height="557" />
   </component>
 </application>
