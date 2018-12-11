@@ -15,7 +15,7 @@ echo "Write your commit comment!"
 read COMMENT </dev/tty
 
 # Add some details to commit message
-TIME=$(date +"%a %d")
+TIME=$(date +"%a %D")
 echo "${TIME}: $COMMENT"
 git commit -m "${TIME}: $COMMENT"
 
