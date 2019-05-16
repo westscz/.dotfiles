@@ -9,8 +9,9 @@
 	ra = remote add
 	po = push origin
 	co = checkout
-	
+
 	pom = push origin master
+	info = remote show origin
 
 [user]
 	email = "(none)"
@@ -18,4 +19,4 @@
 [push]
 	default = simple
 [include]
-        path = ~/.gitconfig.local
+	path = ~/.gitconfig.local
