@@ -15,13 +15,13 @@
   <property name="backdrop" type="empty">
     <property name="screen0" type="empty">
       <property name="monitor0" type="empty">
-        <property name="image-path" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
+        <property name="image-path" type="string" value="/media/jarek/Work [HDD]/Pictures/Design/Kaneki/5f058d7de354c5ee55060bb8bcf38566.jpg"/>
         <property name="image-style" type="empty"/>
         <property name="image-show" type="empty"/>
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="6"/>
-          <property name="last-image" type="string" value="/home/jarek/Pictures/20171226-P1210086.jpg"/>
+          <property name="last-image" type="string" value="/home/jarek/Pictures/wallpaper-kajoj.jpg"/>
           <property name="color1" type="array">
             <value type="uint" value="7848"/>
             <value type="uint" value="7848"/>
@@ -32,7 +32,7 @@
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="6"/>
-          <property name="last-image" type="string" value="/home/jarek/Pictures/file.jpeg"/>
+          <property name="last-image" type="string" value="/media/jarek/Work [HDD]/Pictures/Design/Kaneki/5f058d7de354c5ee55060bb8bcf38566.jpg"/>
         </property>
       </property>
       <property name="monitor1" type="empty">

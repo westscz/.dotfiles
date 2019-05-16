@@ -15,7 +15,7 @@
     <property name="FallbackIconTheme" type="empty"/>
   </property>
   <property name="Xft" type="empty">
-    <property name="DPI" type="empty"/>
+    <property name="DPI" type="int" value="94"/>
     <property name="Antialias" type="empty"/>
     <property name="Hinting" type="empty"/>
     <property name="HintStyle" type="empty"/>
@@ -38,5 +38,8 @@
     <property name="CursorThemeSize" type="empty"/>
     <property name="DecorationLayout" type="empty"/>
     <property name="ColorScheme" type="string" value=""/>
+  </property>
+  <property name="Xfce" type="empty">
+    <property name="LastCustomDPI" type="int" value="94"/>
   </property>
 </channel>
