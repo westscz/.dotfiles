@@ -58,5 +58,29 @@
 - [ ] Custom man page for dotfiles and/or usefull commands
   - [ ] <https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/>
 
+# Linux Tools Alternatives
+
+## > ls
+
+### exa
+
+    description: A modern replacement for ls
+    https://the.exa.website/
+
+## > top
+
+### htop
+
+    description:  interactive process viewer for Unix systems
+    https://hisham.hm/htop/
+
+## > man
+
+### TLDR pages
+
+    description: Simplified and community-driven man pages
+    https://tldr.sh/
+
+
 https://github.com/webpro/awesome-dotfiles
 https://github.com/learn-anything/alfred-workflows#readme
