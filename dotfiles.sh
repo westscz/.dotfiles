@@ -6,6 +6,7 @@ install(){
     create_directories
     run_installers
     create_symlinks
+    crontab $DOTFILES_DIR/system/crontab
 }
 
 create_directories(){
@@ -70,6 +71,10 @@ create_symlinks(){
 
 update(){
     echo TBD
+    echo '-- Apt cleanup'
+	sudo apt autoremove
+	sudo apt autoclean
+	sudo apt-get clean
     return 0
 }
 

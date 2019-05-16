@@ -2,10 +2,10 @@
 
 export PATH_TO_PLAYGROUND="$HOME/Playground"
 export PATH_TO_PROJECTS="$HOME/Projects"
-export EDITOR="vscode"
+export EDITOR="code"
 export WEBBROWSER="chromium"
 
-export PATH=$PATH":$DOTFILES/scripts"           # This allows me to run my own scripts from
+export PATH=$PATH":$DOTFILES/scripts"           # This allows me to run my own scripts
 
 export HISTSIZE='32768';                        # Increase Bash history size. Allow 32³ entries; the default is 500.
 export HISTFILESIZE="${HISTSIZE}";
@@ -21,4 +21,4 @@ export PATH=$PATH:$DOTFILES/scripts
 
 # ---------------------------------
 # Don't make edits below this
-[ -f ".exports.local" ] && source ".exports.local"
+[ -f "$DOTFILES/system/.exports.local" ] && source "$DOTFILES/system/.exports.local"

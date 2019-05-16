@@ -41,6 +41,7 @@ alias vac='source .venv/bin/activate'
 
 #█▓▒░ DOTFILES
 alias df_update="source ~/.bashrc"
+alias crontab_update="crontab $DOTFILES_DIR/system/crontab"
 alias df_config="$EDITOR $DOTFILES &>/dev/null & disown"
 alias df_dir="o $DOTFILES"
 
@@ -74,8 +75,9 @@ alias please='sudo $(fc -ln -1)'
 # ping google-dns server to check if you have a connection outwards
 alias 8888="ping 8.8.8.8"
 
-# shows a nice in-terminal forecast for berlin
+# shows a nice in-terminal forecast for Wroclaw
 alias weather="curl wttr.in/wroclaw"
+alias weather-mini="curl -s wttr.in | head -n7"
 
 # replaces all spaces in the filenames of the cwd with underscores
 alias underscore="rename 'y/ /_/' *" # replaces all spaces in filenames in the cwd with underscores

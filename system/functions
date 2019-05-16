@@ -5,6 +5,13 @@ function mk() {
   mkdir -p "$@" && cd "$@"
 }
 
+function rmde(){
+	for dir in `find . -type d -empty -print`; do
+   	echo $dir
+		rm -d $dir
+	done
+}
+
 # No arguments: `git status`, else acts like `git`
 g() {
   if [[ $# > 0 ]]; then
@@ -66,8 +73,10 @@ function ssh_key(){
 function logbook() {
 	DATE=$(date '+%Y-%m-%d')
 	FPATH=~/Notebook/logbook/$DATE.md
-	echo -e "# $DATE\n\n" >> $FPATH
-    vim $FPATH
+	if [ ! -f $FPATH ]; then
+		echo -e "# $DATE\n" >> $FPATH
+    fi
+	vim $FPATH
 }
 
 # Usage: extract <file>
@@ -101,20 +110,20 @@ extract () {
 
 function cleanup(){
 	# https://www.maketecheasier.com/8-ways-to-maintain-a-clean-lean-ubuntu-machine/
-	echo '-- convert WEBP to PNG'
+	figlet ".cleanup"
+	echo '-- Convert WEBP to PNG --'
 	find ~/Downloads -name "*.webp" -exec dwebp {} -o {}.png \;
 
-	echo '-- run classifier'
+	echo '-- Run classifier --'
 	classifier -d ~/Downloads
-	rm -r /home/jarek/Downloads/WEBP
 
-	echo '-- empty the trash'
+	if [ -d "/home/jarek/Downloads/WEBP" ]; then
+		echo '-- Remove WEBP directory --'
+		rm -r /home/jarek/Downloads/WEBP
+	fi
+
+	echo '-- Empty the trash'
 	gio trash --empty
-
-	echo '-- apt cleanup'
-	sudo apt autoremove
-	sudo apt autoclean
-	sudo apt-get clean
 }
 
 # update all packages
@@ -154,6 +163,14 @@ function nline {
     {
         awk '{ if (NR%'$NLINES'==0) { print "\033[1;44m" $0 "\033[0m" } else { print $0} }'
     }
+}
+
+# create data driven directory
+# https://spin.atomicobject.com/2019/03/17/organize-one-off-task-files/
+function workdir() {
+    dir="$HOME/datedwork/"`date "+%Y.%m.%d"`"-$1"
+    mkdir -p $dir
+    cd $dir
 }
 
 # ---------------------------------
