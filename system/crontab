@@ -1,0 +1,21 @@
+# Remember to add -x to all cron bash scripts
+#    chmod +x cron*.sh
+#
+# source: https://github.com/paulirish/dotfiles/
+#
+#=====================================================================#
+#       0-23  0-59              0-30  0-6   1-12                      #
+#       |   __|                _|    _|    _|                         #
+#       |  |                  |     |     |            * any          #
+#    At HH:MM on day-of-month MD on WD in M            - range        #
+#       |  |                  |     |     |            , array        #
+#   ____|__|         _________|     |     |            / step         #
+#  |    |           |         ______|_____|                           #
+#  |    |__         |        |      |__                               #
+#  |       |        |        |         |                              #
+#=====================================================================#
+#  Min  |  Hour  |  Mday  |  Month  |  Wday  |  Command               #
+#=====================================================================#
+   *       19       *        *         *        $HOME/.dotfiles/cron/daily-afternoon.sh >> /tmp/crontab.log
+   15      *        *        *         *        $HOME/.dotfiles/cron/every-hour.sh >> /tmp/crontab.log
+#=====================================================================#
