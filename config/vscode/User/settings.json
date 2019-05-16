@@ -6,5 +6,7 @@
     "vsnotes.defaultNotePath": "/home/jarek/Notebook",
     "workbench.colorTheme": "Dracula At Night",
     "workbench.activityBar.visible": true,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "hemingway.enabled": false,
+    "explorer.confirmDelete": false
 }
