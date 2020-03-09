@@ -61,7 +61,7 @@ alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 alias ccat="pygmentize -g"
 alias ffind="fzf --preview='pygmentize -g {}'"
-alias notebook="$EDITOR ~/Notebook &>/dev/null & disown"
+alias notebook="cd ~/Notebook && $EDITOR . &>/dev/null & disown"
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"' # Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
 
@@ -86,7 +86,7 @@ alias underscore="rename 'y/ /_/' *" # replaces all spaces in filenames in the c
 # don't use this at work ;)
 alias rancommit="git commit -m \"\$(curl -s http://whatthecommit.com/index.txt)\"" # commits with a random commit message
 
-alias code="$EDITOR ."
+alias code="$EDITOR"
 
 alias restart='sudo shutdown -r'
 
