@@ -17,5 +17,5 @@
 #  Min  |  Hour  |  Mday  |  Month  |  Wday  |  Command               #
 #=====================================================================#
    *       19       *        *         *        $HOME/.dotfiles/cron/daily-afternoon.sh >> /tmp/crontab.log
-   15      *        *        *         *        $HOME/.dotfiles/cron/every-hour.sh >> /tmp/crontab.log
+   15      *        *        *         *        $HOME/.dotfiles/cron/every-hour.sh && curl -fsS --retry 3 https://hc-ping.com/cce617de-578e-4b93-9a07-265bbdeff25d > /dev/null
 #=====================================================================#

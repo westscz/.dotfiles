@@ -6,7 +6,7 @@ install(){
     create_directories
     run_installers
     create_symlinks
-    crontab $DOTFILES_DIR/system/crontab
+    setup_crontab
 }
 
 create_directories(){
@@ -14,6 +14,11 @@ create_directories(){
     mkdir -p $HOME/.virtualenvs
     mkdir -p $HOME/Playground
     mkdir -p $HOME/Projects
+}
+
+setup_crontab(){
+    crontab $DOTFILES_DIR/system/crontab
+    chmod +x $DOTFILES_DIR/cron/*.sh
 }
 
 run_installers(){
