@@ -63,6 +63,13 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 #█▓▒░ VirtualEnv
-source /home/jarek/.local/bin/virtualenvwrapper.sh   
+source /home/jarek/.local/bin/virtualenvwrapper.sh
+
+#█▓▒░ Pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
