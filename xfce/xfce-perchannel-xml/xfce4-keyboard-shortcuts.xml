@@ -39,7 +39,7 @@
       <property name="&lt;Super&gt;4" type="empty"/>
     </property>
     <property name="custom" type="empty">
-      <property name="Print" type="string" value="xfce4-screenshooter -f"/>
+      <property name="Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
       <property name="XF86Explorer" type="string" value="exo-open --launch FileManager"/>
@@ -79,6 +79,7 @@
       <property name="&lt;Super&gt;F6" type="string" value="/home/jarek/.dotfiles/scripts/light.sh +"/>
       <property name="&lt;Super&gt;F5" type="string" value="/home/jarek/.dotfiles/scripts/light.sh -"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Home" type="string" value="/home/jarek/move-to-next-monitor"/>
+      <property name="&lt;Super&gt;F7" type="string" value="/home/jarek/.screenlayout/presentation_mirror.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -205,4 +206,5 @@
     <value type="string" value="commands"/>
     <value type="string" value="xfwm4"/>
   </property>
+  <property name="&lt;Super&gt;F7" type="string" value="/home/jarek/.screenlayout/presentation_mirror.sh"/>
 </channel>
