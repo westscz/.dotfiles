@@ -34,12 +34,23 @@
     cursor_color = "#eff0eb"
     cursor_shape = underline
     custom_command = bash
-    font = Space Mono 10
+    font = SF Mono Light 10
     foreground_color = "#eff0eb"
     palette = "#282a36:#ff5c57:#5af78e:#f3f99d:#57c7ff:#ff6ac1:#9aedfe:#eff0eb:#282a36:#ff5c57:#5af78e:#f3f99d:#57c7ff:#ff6ac1:#9aedfe:#eff0eb"
     scrollbar_position = hidden
     show_titlebar = False
     use_custom_command = True
+    use_system_font = False
+  [[New Profile]]
+  [[Presentation]]
+    background_color = "#ffffff"
+    cursor_color = "#aaaaaa"
+    font = Monospace 16
+    foreground_color = "#000000"
+    use_system_font = False
+  [[mac]]
+    cursor_color = "#aaaaaa"
+    font = SF Mono Medium 10
     use_system_font = False
   [[new_colors]]
     background_color = "#202124"
