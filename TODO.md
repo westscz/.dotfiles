@@ -31,7 +31,7 @@
 - [ ] https://haydenjames.io/htop-heres-how-to-customize-it/
 - [ ] Git Update
   - [ ] <https://github.com/Blackhippy/Dotfiles/blob/master/scripts/gitupdate.sh>
-  - [ ] (cd $(dirname $(readlink $(which git-semver))) && git status)
+  - [ ] (cd $(dirname $(readlink \$(which git-semver))) && git status)
 
 ## Test
 
@@ -80,7 +80,6 @@
 
     description: Simplified and community-driven man pages
     https://tldr.sh/
-
 
 https://github.com/webpro/awesome-dotfiles
 https://github.com/learn-anything/alfred-workflows#readme

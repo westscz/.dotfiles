@@ -47,7 +47,7 @@ This will clone repository to ~/.dotfiles directory
 - `logbook`: Create markdown file with actual date, default in - ~/Notebook/logbook/
 - `extract`: Extracts archived files
 - `backup`: Create a copy of a file/directory with appended .backup
-- `nline`: Color lines,  use case `$ ls -l | nline 5`
+- `nline`: Color lines, use case `$ ls -l | nline 5`
 - `cleanup`: Cleanup apt, trash and sort files in Downloads directory
 - `update`: Update all packages in apt/flake/snap
 - `current`: Save current installed packages list

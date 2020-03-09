@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Interesting aliases, functions from other dotfiles repos
 - Theme (fonts, icons, wallpaper)
 - Backup installed packages list with func `current`
+- Crontab with jobs in `cron` directory
