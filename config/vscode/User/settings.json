@@ -4,9 +4,28 @@
     "latex-workshop.view.pdf.viewer": "browser",
     "git.autofetch": true,
     "vsnotes.defaultNotePath": "/home/jarek/Notebook",
-    "workbench.colorTheme": "Dracula At Night",
-    "workbench.activityBar.visible": true,
     "files.trimTrailingWhitespace": true,
     "hemingway.enabled": false,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "window.zoomLevel": 0,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "workbench.colorTheme": "Github Light Theme",
+    "polacode.backgroundColor": "#fff",
+    "polacode.shadow": "rgba(0, 0, 0, 0.15) 0px 0px 35px",
+    "polacode.transparentBackground": true,
+    "codesnap.backgroundColor": "#fff",
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.15) 0px 0px 35px",
+    "codesnap.transparentBackground": true,
+    "codesnap.showWindowControls": false,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "kite.showGoBetaNotification": false,
+    "workbench.startupEditor": "none",
+    "workbench.enableExperiments": false,
+    "workbench.tree.indent": 4,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "update.showReleaseNotes": false
 }
