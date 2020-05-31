@@ -29,10 +29,10 @@
     <property name="MonospaceFontName" type="string" value="SF Mono 10"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
-    <property name="ToolbarStyle" type="empty"/>
+    <property name="ToolbarStyle" type="string" value="icons"/>
     <property name="ToolbarIconSize" type="empty"/>
-    <property name="MenuImages" type="empty"/>
-    <property name="ButtonImages" type="empty"/>
+    <property name="MenuImages" type="bool" value="true"/>
+    <property name="ButtonImages" type="bool" value="true"/>
     <property name="MenuBarAccel" type="empty"/>
     <property name="CursorThemeName" type="string" value="DMZ-White"/>
     <property name="CursorThemeSize" type="int" value="16"/>

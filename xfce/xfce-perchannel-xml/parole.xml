@@ -12,12 +12,12 @@
     <property name="encoding" type="string" value="WINDOWS-1250"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/media/jarek/Media [HDD]/Misc/Tests/04_misc/02/Stpeach"/>
+    <property name="last-used-media" type="string" value="/home/jarek/Desktop"/>
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="true"/>
     <property name="width" type="int" value="1366"/>
-    <property name="height" type="int" value="723"/>
+    <property name="height" type="int" value="750"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="100"/>
