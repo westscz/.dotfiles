@@ -57,6 +57,8 @@
   - [ ] <http://feeblenerd.blogspot.com/2015/11/pretty-i3-with-xfce.html>
 - [ ] Custom man page for dotfiles and/or usefull commands
   - [ ] <https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/>
+- [ ] Makefile do obsługi dotfiles z symlinkiem w katalogu domowym.
+
 
 # Linux Tools Alternatives
 

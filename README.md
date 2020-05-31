@@ -71,3 +71,4 @@ The contents of this repo are in the public domain. See the [LICENSE](LICENSE.md
 - Lars Moelleken <https://github.com/voku/dotfiles>
 - Ivy Zhang <https://github.com/iiPlasma/dots>
 - Remy Sharps <https://remysharp.com/2018/08/23/cli-improved>
+- <https://sneak.berlin/20191011/stupid-unix-tricks/>
