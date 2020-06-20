@@ -58,6 +58,8 @@
 - [ ] Custom man page for dotfiles and/or usefull commands
   - [ ] <https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/>
 - [ ] Makefile do obsługi dotfiles z symlinkiem w katalogu domowym.
+- [ ] https://github.com/tanrax/maza-ad-blocking
+- [ ] https://martinovic.blog/post/home_git/
 
 
 # Linux Tools Alternatives

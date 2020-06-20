@@ -72,3 +72,4 @@ The contents of this repo are in the public domain. See the [LICENSE](LICENSE.md
 - Ivy Zhang <https://github.com/iiPlasma/dots>
 - Remy Sharps <https://remysharp.com/2018/08/23/cli-improved>
 - <https://sneak.berlin/20191011/stupid-unix-tricks/>
+- <https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort>

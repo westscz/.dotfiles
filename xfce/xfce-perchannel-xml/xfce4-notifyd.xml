@@ -12,6 +12,7 @@
       <value type="string" value="chromium"/>
       <value type="string" value="com.uploadedlobster.peek"/>
       <value type="string" value="digikam"/>
+      <value type="string" value="FileZilla"/>
       <value type="string" value="Firefox"/>
       <value type="string" value="nm-applet"/>
       <value type="string" value="notify-send"/>
