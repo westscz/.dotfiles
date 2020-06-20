@@ -33,3 +33,38 @@ streetsidesoftware.code-spell-checker
 tehnix.vscode-tidymarkdown
 telesoho.vscode-markdown-paste-image
 yzhang.markdown-all-in-one
+code --install-extension 13xforever.language-x86-64-assembly
+code --install-extension aaron-bond.better-comments
+code --install-extension adpyke.codesnap
+code --install-extension alexcvzz.vscode-sqlite
+code --install-extension auchenberg.vscode-browser-preview
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension eamodio.gitlens
+code --install-extension EliverLara.andromeda
+code --install-extension enkia.tokyo-night
+code --install-extension fisheva.eva-theme
+code --install-extension hediet.vscode-drawio
+code --install-extension Hyzeta.vscode-theme-github-light
+code --install-extension James-Yu.latex-workshop
+code --install-extension jrebocho.vscode-random
+code --install-extension juliettepretot.lucy-vscode
+code --install-extension kiteco.kite
+code --install-extension lonefy.vscode-JS-CSS-HTML-formatter
+code --install-extension Luxcium.pop-n-lock-theme-vscode
+code --install-extension MaxfieldWalker.vscode-color-theme-spirited-away
+code --install-extension maziac.asm-code-lens
+code --install-extension metaseed.metago
+code --install-extension metaseed.MetaJump
+code --install-extension metaseed.MetaWord
+code --install-extension mrmlnc.vscode-remark
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension mtxr.sqltools
+code --install-extension Nimda.deepdark-material
+code --install-extension patricklee.vsnotes
+code --install-extension PKief.material-icon-theme
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension tehnix.vscode-tidymarkdown
+code --install-extension telesoho.vscode-markdown-paste-image
+code --install-extension yzhang.markdown-all-in-one
