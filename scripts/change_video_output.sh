@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
+
 VGA="$(xrandr | grep -e 'VGA-[0-9]* connected')"
 HDMI="$(xrandr | grep -e 'HDMI-[0-9]* connected')"
 

@@ -87,3 +87,11 @@
 
 https://github.com/webpro/awesome-dotfiles
 https://github.com/learn-anything/alfred-workflows#readme
+
+
+## Docs
+
+- https://ashishb.net/all/the-first-two-statements-of-your-bash-script-should-be/
+- https://github.com/webpro/awesome-dotfiles
+- https://martinovic.blog/post/home_git/
+- https://osworld.pl/cpu-g-czyli-cpu-z-dla-linuksa/
