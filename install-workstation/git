@@ -1,0 +1,18 @@
+name="git"
+arg="clone"
+install="$name $arg"
+
+packages=(
+    https://gitlab.com/hesperos/napi
+)
+
+if test ! $(which $name)
+then
+    echo "Installing a stable version of $name..."
+    sudo apt install git -y
+fi
+
+$install "${packages[@]}"
+
+# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# ~/.fzf/install

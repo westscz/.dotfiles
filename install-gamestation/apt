@@ -1,0 +1,31 @@
+name="apt-get"
+arg="install -y"
+install="$name $arg"
+
+repositories=(
+    ppa:lutris-team/lutris
+)
+
+packages=(
+    lutris
+)
+
+if test ! $(which $name)
+then
+    echo "What the hell ?!"
+    return 0
+fi
+
+
+for repository in "${repositories[@]}"
+do
+   sudo add-apt-repository $repository -y
+done
+
+#lutris_dependency
+
+sudo apt-get update
+
+sudo $install "${packages[@]}"
+
+# check if all was installed using which

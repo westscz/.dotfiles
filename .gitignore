@@ -3,3 +3,4 @@ theme/icons/*
 config/vscode/User/workspaceStorage/*
 storage.db
 config/vscode/User/globalStorage/state.vscdb
+*.swp

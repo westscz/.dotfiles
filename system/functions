@@ -117,9 +117,9 @@ function cleanup(){
 	echo '-- Run classifier --'
 	classifier -d ~/Downloads
 
-	if [ -d "/home/jarek/Downloads/WEBP" ]; then
+	if [ -d "/home/$USER/Downloads/WEBP" ]; then
 		echo '-- Remove WEBP directory --'
-		rm -r /home/jarek/Downloads/WEBP
+		rm -r /home/$USER/Downloads/WEBP
 	fi
 
 	echo '-- Empty the trash'

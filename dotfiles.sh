@@ -23,11 +23,12 @@ setup_crontab(){
 
 run_installers(){
     installers=(
-        apt
-        flatpak
-        snap
-        pip
-        git
+        # apt
+        # flatpak
+        # snap
+        # pip
+        # git
+        # TODO: Verify apps on installers lists
     )
 
     for installer in "${installers[@]}"
@@ -66,8 +67,9 @@ create_symlinks(){
     rm -r ~/.config/terminator
     ln -sf "$DOTFILES_DIR/config/terminator" ~/.config/terminator
 
-    rm -r ~/.PyCharm*/config/options
-    ln -sf "$DOTFILES_DIR/config/pycharm/options" ~/.PyCharm*/config
+    # rm -r ~/.PyCharm*/config/options
+    # ln -sf "$DOTFILES_DIR/config/pycharm/options" ~/.PyCharm*/config
+    # TODO: Get plugins list and remove
 
     rm -r ~/.config/Code/User
     ln -sf "$DOTFILES_DIR/config/vscode/User" ~/.config/Code/

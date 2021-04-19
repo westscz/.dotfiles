@@ -10,8 +10,7 @@
     "[html]": {
         "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter",
     },
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Default Light+",
+    "window.zoomLevel": 1,
     "polacode.backgroundColor": "#fff",
     "polacode.shadow": "rgba(0, 0, 0, 0.15) 0px 0px 35px",
     "polacode.transparentBackground": true,

@@ -34,14 +34,22 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 #█▓▒░ VirtualEnv
-source /home/jarek/.local/bin/virtualenvwrapper.sh
+# source /home/$USER/.local/bin/virtualenvwrapper.sh
+# TODO:
+# /home/fox/.local/bin/virtualenvwrapper.sh: line 230: : command not found
+# virtualenvwrapper.sh: There was a problem running the initialization hooks.
+
+# If Python could not import the module virtualenvwrapper.hook_loader,
+# check that virtualenvwrapper has been installed for
+# VIRTUALENVWRAPPER_PYTHON= and that PATH is
+# set properly.
 
 #█▓▒░ Pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 for FN in $HOME/.dotfiles/system/bashrc.d/*.sh ; do
     source "$FN"

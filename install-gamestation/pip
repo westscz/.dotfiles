@@ -1,0 +1,19 @@
+name="pip"
+arg="install"
+install="$name $arg"
+
+packages=(
+    classifier
+    youtube-dl
+    tldr
+    Pygments
+    s-tui
+)
+
+if test ! $(which $name)
+then
+    echo "Installing a stable version of $name..."
+    sudo apt install python-pip -y
+fi
+
+$install "${packages[@]}"

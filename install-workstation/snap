@@ -1,0 +1,20 @@
+name="snap"
+arg="install"
+install="$name $arg"
+
+packages=(
+    "code --classic"
+    spotify
+    vlc
+)
+
+if test ! $(which $name)
+then
+    echo "Installing a stable version of $name..."
+    sudo apt install snapd -y
+fi
+
+for package in "${packages[@]}"
+do
+   sudo $install $package
+done

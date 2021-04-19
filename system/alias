@@ -95,6 +95,15 @@ alias restart='sudo shutdown -r'
 alias wifi='nmtui'
 alias sl='ranger'
 
+
+#█▓▒░ Presentation
+
+alias rdp='remmina'
+alias timer='termdown'
+alias przerwa='timer 5m'
+alias zadanie='timer 15m'
+alias obiad='timer 13:00'
+
 # ---------------------------------
 # Reference:
 # ---------------------------------
