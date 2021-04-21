@@ -99,7 +99,9 @@ alias sl='ranger'
 #█▓▒░ Presentation
 
 alias rdp='remmina'
+alias camera_test='cheese'
 alias timer='termdown'
+alias pytania='timer 3'
 alias przerwa='timer 5m'
 alias zadanie='timer 15m'
 alias obiad='timer 13:00'
