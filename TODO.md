@@ -47,6 +47,10 @@
 - [ ] https://martinovic.blog/post/home_git/
 - [ ] https://github.com/guillaumebreton/gone
 - [ ] https://www.atlassian.com/git/tutorials/dotfiles
+- [ ] dir structure
+  - [ ] project -> active projects
+  - [ ] playground -> place for tests
+  - [ ] foss -> place to clone external repositories
 
 ## Docs
 
