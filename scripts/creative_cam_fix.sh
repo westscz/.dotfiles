@@ -15,7 +15,7 @@ v4l2-ctl -d /dev/video1 -l
 v4l2-ctl -d /dev/video1 --set-ctrl=exposure_auto=1
 
 # Set exposure to the good one
-v4l2-ctl -d /dev/video1 --set-ctrl=exposure_absolute=256
+v4l2-ctl -d /dev/video1 --set-ctrl=exposure_absolute=384
 
 # Fix white balance
 v4l2-ctl -d /dev/video1 --set-ctrl=white_balance_temperature=6252
