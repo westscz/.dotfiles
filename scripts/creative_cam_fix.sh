@@ -5,10 +5,10 @@ set -euo pipefail
 # https://www.raspberrypi.org/forums/viewtopic.php?t=223268
 # There is a problem with colors and auto_exposure
 
-INDEX=1            # Use `v4l2-ctl -d /dev/video1 -l` for verification
-EXPOSURE=400
-WHITE_BALANCE=6252
-BRIGHTNESS=32
+VIDEO_INDEX="/dev/null"
+EXPOSURE=320
+WHITE_BALANCE=6100
+BRIGHTNESS=30
 
 
 if test ! $(which v4l2-ctl)
@@ -18,19 +18,25 @@ then
     sudo apt install v4l-utils -y
 fi
 
-echo "Change settings exposure=$EXPOSURE, white_balance=$WHITE_BALANCE"
+for video in /dev/video* ; do
+    if v4l2-ctl -d $video -L  | grep -q 'exposure_auto'; then
+        VIDEO_INDEX=$video
+    fi
+done
+
+echo "Change $VIDEO_INDEX settings exposure=$EXPOSURE, white_balance=$WHITE_BALANCE"
 
 # Stop auto exposure
-v4l2-ctl -d /dev/video$INDEX --set-ctrl=exposure_auto=1
+v4l2-ctl -d $VIDEO_INDEX --set-ctrl=exposure_auto=1
 
 # Set exposure to the good one
-v4l2-ctl -d /dev/video$INDEX --set-ctrl=exposure_absolute=$EXPOSURE
+v4l2-ctl -d $VIDEO_INDEX --set-ctrl=exposure_absolute=$EXPOSURE
 
 # Stop auto white balance
-v4l2-ctl -d /dev/video$INDEX --set-ctrl=white_balance_temperature_auto=0
+v4l2-ctl -d $VIDEO_INDEX --set-ctrl=white_balance_temperature_auto=0
 
 # Set white balance temperature
-v4l2-ctl -d /dev/video$INDEX --set-ctrl=white_balance_temperature=$WHITE_BALANCE
+v4l2-ctl -d $VIDEO_INDEX --set-ctrl=white_balance_temperature=$WHITE_BALANCE
 
 # Set brightness value
-v4l2-ctl -d /dev/video$INDEX --set-ctrl=brightness=$BRIGHTNESS
+v4l2-ctl -d $VIDEO_INDEX --set-ctrl=brightness=$BRIGHTNESS

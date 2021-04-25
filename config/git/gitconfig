@@ -13,8 +13,11 @@
 	pom = push origin master
 	info = remote show origin
 
+	reb = rebase origin/master
+	up = commit --amend
+
 [user]
-	email = "(none)"
+	email = "jaroslaw.piszczala@gmail.com"
 	name = Jaroslaw Piszczala
 [push]
 	default = simple

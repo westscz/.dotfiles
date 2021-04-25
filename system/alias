@@ -72,6 +72,7 @@ alias rdp='remmina'
 alias camera_test='cheese'
 alias timer='termdown'
 alias przerwa='timer 5m'
+alias pomodoro='timer 25m'
 
 #█▓▒░ MISCELLANEOUS
 alias hdmi="xrandr --output HDMI-1 --auto --right-of LVDS-1"      #connect via HDMI
