@@ -30,6 +30,7 @@
       <value type="string" value="thunar-volman"/>
       <value type="string" value="Thunderbird"/>
       <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="xfce4-settings-helper"/>
     </property>
   </property>
 </channel>
