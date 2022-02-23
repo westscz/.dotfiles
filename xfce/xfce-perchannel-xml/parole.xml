@@ -12,7 +12,7 @@
     <property name="encoding" type="string" value="WINDOWS-1250"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/jarek/Downloads/untitled folder/Videos"/>
+    <property name="last-used-media" type="string" value="/home/jarek/Desktop/AMelson/Voice Recorder"/>
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="true"/>
@@ -20,7 +20,7 @@
     <property name="height" type="int" value="747"/>
   </property>
   <property name="audio" type="empty">
-    <property name="volume" type="int" value="85"/>
+    <property name="volume" type="int" value="35"/>
   </property>
   <property name="playlist" type="empty">
     <property name="show-playlist" type="bool" value="false"/>
