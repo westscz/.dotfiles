@@ -32,6 +32,8 @@ packages=(
     webp
     gparted
     cmake
+    net-tools
+    redshift
 )
 
 if test ! $(which $name)

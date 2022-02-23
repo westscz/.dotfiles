@@ -41,8 +41,9 @@ install_theme(){
     echo "Install fonts"
     sudo cp -r -a "$DOTFILES_DIR/theme/fonts/." /usr/share/fonts/
 
-    echo "Install icons"
-    sudo cp -r -a "$DOTFILES_DIR/theme/icons/." /usr/share/icons/
+    # TODO: Decide if we need those icons
+    # echo "Install icons"
+    # sudo cp -r -a "$DOTFILES_DIR/theme/icons/." /usr/share/icons/
 }
 
 create_symlinks(){

@@ -5,6 +5,10 @@ alias sudo='sudo '                                                # Enable alias
 alias '?=man'
 alias h="history"
 
+#█▓▒░ SYSTEM
+alias afk="xflock4"  # Lock the screen (when going AFK)
+alias restart='sudo shutdown -r'
+
 #█▓▒░ CD
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -23,7 +27,6 @@ alias l="ls -la"                                                  # List in long
 alias ld="ls -ld */"                                              # List in long format, only directories
 alias ll='ls -alF'
 alias la='ls -A'
-#alias l='ls -CF'
 
 #█▓▒░ LISTS
 #List declared aliases, functions, paths
@@ -34,6 +37,7 @@ alias paths='echo -e ${PATH//:/\\n}'                              # List declare
 #█▓▒░ APT
 alias apt-upd='echo "Updating cache..." && sudo apt-get update > /dev/null'
 alias apt-upg='sudo apt-get upgrade'
+alias upt='sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove && sudo apt clean'
 
 #█▓▒░ PYTHON ENV
 alias venv='virtualenv -p /usr/local/bin/python3 .venv'
@@ -45,24 +49,35 @@ alias crontab_update="crontab $DOTFILES_DIR/system/crontab"
 alias df_config="$EDITOR $DOTFILES &>/dev/null & disown"
 alias df_dir="o $DOTFILES"
 
-#█▓▒░ MISCELLANEOUS
-alias rpi="sshpass -p 'raspberrypi' ssh pi@192.168.1.102"         #connect to rPI
-alias hdmi="xrandr --output HDMI-1 --auto --right-of LVDS-1"      #connect via HDMI
-alias vga="xrandr --output VGA-1 --auto --right-of LVDS-1"        #connect via VGA
-alias webpng='find ./ -name "*.webp" -exec dwebp {} -o {}.png \;' #webp to png converter
-alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3' #download youtube as mp3
-
+#█▓▒░ NETWORK
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
-
-alias afk="xflock4"  # Lock the screen (when going AFK)
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+alias rpi="sshpass -p 'raspberrypi' ssh pi@192.168.1.102"         #connect to rPI
+alias 8888="ping 8.8.8.8" # ping google-dns server to check if you have a connection outwards
 
+#█▓▒░ APP PARTIALS
+alias webpng='find ./ -name "*.webp" -exec dwebp {} -o {}.png \;' #webp to png converter
+alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3' #download youtube as mp3
 alias ccat="pygmentize -g"
 alias ffind="fzf --preview='pygmentize -g {}'"
-alias notebook="cd ~/Notebook && $EDITOR . &>/dev/null & disown"
+alias code="$EDITOR"
+alias wifi='nmtui'
+alias sl='ranger'
 
+#█▓▒░ PRESENTATION
+
+alias rdp='remmina'
+alias camera_test='cheese'
+alias timer='termdown'
+alias przerwa='timer 5m'
+alias pomodoro='timer 25m'
+
+#█▓▒░ MISCELLANEOUS
+alias hdmi="xrandr --output HDMI-1 --auto --right-of LVDS-1"      #connect via HDMI
+alias vga="xrandr --output VGA-1 --auto --right-of LVDS-1"        #connect via VGA
+alias notebook="cd ~/Notebook && $EDITOR . &>/dev/null & disown"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"' # Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
 
 # searches the history for a command
@@ -71,9 +86,6 @@ alias hg="history | grep" #<search term>
 
 # executes the last command as sudo
 alias please='sudo $(fc -ln -1)'
-
-# ping google-dns server to check if you have a connection outwards
-alias 8888="ping 8.8.8.8"
 
 # shows a nice in-terminal forecast for Wroclaw
 alias weather="curl wttr.in/wroclaw"
