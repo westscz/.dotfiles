@@ -3,9 +3,9 @@ arg="install"
 install="$name $arg"
 
 packages=(
-    chromium
-    "vscode --classic"
-    "pycharm-community --classic"
+#    chromium
+    "code --classic"
+#    "pycharm-community --classic"
     spotify
     vlc
 )

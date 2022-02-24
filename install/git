@@ -16,3 +16,5 @@ $install "${packages[@]}"
 
 # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # ~/.fzf/install
+
+# TODO: Clone them to .foss directory or something
