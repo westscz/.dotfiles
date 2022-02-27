@@ -17,9 +17,11 @@
 	up = commit --amend
 
 [user]
-	email = "jaroslaw.piszczala@gmail.com"
+	email = "westscz@gmail.com"
 	name = Jaroslaw Piszczala
 [push]
 	default = simple
 [include]
 	path = ~/.gitconfig.local
+[includeIf "gitdir:~/second-brain/"]
+	path = .gitconfig-gitlab

@@ -62,7 +62,8 @@ create_symlinks(){
     echo "Create config files symlinks"
     ln -sf "$DOTFILES_DIR/config/classifier/.classifier-master.conf" ~/
 
-    ln -sf "$DOTFILES_DIR/config/git/gitconfig" ~/.gitconfig
+    ln -sf "$DOTFILES_DIR/config/git/.gitconfig" ~/.gitconfig
+    ln -sf "$DOTFILES_DIR/config/git/.gitconfig-gitlab" ~/.gitconfig-gitlab
 
     #ADD Only if which(terminator) == True
     rm -r ~/.config/terminator
