@@ -98,6 +98,25 @@ alias underscore="rename 'y/ /_/' *" # replaces all spaces in filenames in the c
 # don't use this at work ;)
 alias rancommit="git commit -m \"\$(curl -s http://whatthecommit.com/index.txt)\"" # commits with a random commit message
 
+alias code="$EDITOR"
+
+alias restart='sudo shutdown -r'
+
+#█▓▒░ Apps shortcuts
+
+alias wifi='nmtui'
+alias audio='pavucontrol &'
+alias sl='ranger'
+
+
+#█▓▒░ Presentation
+
+alias rdp='remmina'
+alias timer='termdown'
+alias przerwa='timer 5m'
+alias zadanie='timer 15m'
+alias obiad='timer 13:00'
+
 # ---------------------------------
 # Reference:
 # ---------------------------------

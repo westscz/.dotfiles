@@ -13,18 +13,19 @@ Target platforms: Xubuntu
 
 ### Clone
 
+    sudo apt get install git
     git clone https://github.com/westscz/.dotfiles.git ~/.dotfiles
 
 This will clone repository to ~/.dotfiles directory
 
 ### Install
 
-    ./dotfiles.sh install
+    .dotfiles/dotfiles.sh install
 
 ### CLI
 
     df_config           --open dotfiles in `$EDITOR`
-    df_upgrade          --restart dotfiles
+    df_udate            --restart dotfiles
 
 ## Source structure
 
@@ -56,6 +57,11 @@ This will clone repository to ~/.dotfiles directory
 - `mv_next_display`: Move window to next display
 - `sysinfo`: Custom show system info
 - `terminal_test`: Test terminal colors
+
+## TODO before reinstall
+
+- copy `.thunderbird` file
+- create script to make everything from this list
 
 ## License
 

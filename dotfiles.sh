@@ -23,11 +23,11 @@ setup_crontab(){
 
 run_installers(){
     installers=(
-        # apt
+         apt
         # flatpak
-        # snap
-        # pip
-        # git
+         snap
+         pip
+         git
         # TODO: Verify apps on installers lists
     )
 
@@ -74,6 +74,12 @@ create_symlinks(){
 
     rm -r ~/.config/Code/User
     ln -sf "$DOTFILES_DIR/config/vscode/User" ~/.config/Code/
+
+    rm -r ~/.config/i3
+    ln -sf "$DOTFILES_DIR/config/i3" ~/.config/i3
+
+    rm -r ~/.config/i3status
+    ln -sf "$DOTFILES_DIR/config/i3status" ~/.config/i3status
 
 }
 

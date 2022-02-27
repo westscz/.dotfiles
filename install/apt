@@ -11,20 +11,21 @@ function lutris_dependency(){
 
 repositories=(
     ppa:dawidd0811/neofetch
-    ppa:nilarimogard/webupd8
-    ppa:qbittorrent-team/qbittorrent-stable
+#    ppa:nilarimogard/webupd8
+#    ppa:qbittorrent-team/qbittorrent-stable
 )
 
 packages=(
+    i3
     neofetch
     tree
-    puddletag
-    lutris
+#    puddletag
+#    lutris
     htop
     figlet
     lolcat
     terminator
-    qbittorrent
+#    qbittorrent
     calibre
     vim
     gvfs-bin

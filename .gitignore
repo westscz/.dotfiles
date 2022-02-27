@@ -6,3 +6,9 @@ config/vscode/User/globalStorage/state.vscdb
 config/vscode/User/globalStorage/state.vscdb.backup
 *.swp
 *.vscdb
+
+# Ranger
+
+config/ranger/tagged
+config/ranger/history
+config/ranger/bookmarks
