@@ -1,4 +1,4 @@
-# Remember to add -x to all cron bash scripts
+# Remember to add +x to all cron bash scripts
 #    chmod +x cron*.sh
 #
 # source: https://github.com/paulirish/dotfiles/

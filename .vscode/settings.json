@@ -1,0 +1,12 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        // Run whenever any file is saved
+        "match": ".*",
+        "cmd": "make push"
+      }
+    ]
+  }
+}
+// https://makevscodeawesome.com/

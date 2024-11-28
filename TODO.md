@@ -25,10 +25,7 @@
     - [ ] `sudo apt install fonts-texgyre`
     - [ ] https://github.com/alerque/libertinus/releases/tag/v7.040
     - [x] SF Pro wygląda według mnie zdecydowanie lepiej
-  - [ ] Battery issues
-    - [ ] https://www.ctrl.blog/entry/linux-laptop-low-battery-suspend.html
-    - [ ] https://monadical.com/posts/moving-to-linux-desktop.html#Battery-life
-    - [ ] https://nwildner.com/posts/2020-10-01-nvidia-reverseprime/
+
   - [ ] Audio Issues
     - [ ] https://superuser.com/questions/805525/why-is-unmute-not-working-with-amixer-command
   - [ ] Windows/Linux machine
@@ -47,33 +44,19 @@
     - [ ] https://www.cyberciti.biz/faq/linux-backup-thunderbird-email-profile/
   - [ ] VSCode plugins dump/install script
 - [ ] **APP**
-  - [ ] Setup redshift
-    - [ ] Create alias for this `flux` or something
   - [ ] https://github.com/tanrax/maza-ad-blocking
-    - [ ] Tested
-    - [ ] Added to dotfiles
-  - [ ] Add "Alfred" to installer
-    - [ ] Add configuration
-    - [ ] https://dev.to/gksander/breaking-up-with-my-mouse-mac-edition-49md
-    - [ ] https://medium.com/curiouscaloo/macos-to-ubuntu-part1-alfred-replacement-7864b4d26397
-    - [ ] https://albertlauncher.github.io/docs/installing/
-    - [ ] https://github.com/learn-anything/alfred-workflows#readme
-    - [ ] https://github.com/nikitavoloboev/small-workflows
-    - [ ] https://github.com/vitorgalvao/alfred-workflows
-  - [ ] Pomodoro timer
-    - [ ] Tested
-    - [ ] Added to dotfiles
-    - [ ] https://github.com/guillaumebreton/gone
-  - [ ] Filebrowser test
-    - [ ] Ranger
-    - [ ] https://github.com/jarun/nnn
-      - [ ] Tested
-      - [ ] Added to dotfiles
-  - [ ] https://gitlab.com/es20490446e/exeCute
-  - [ ] https://github.com/aristocratos/bashtop
-    - [x] Tested
-    - [ ] Added to dotfiles
 
+
+- <https://spicetify.app/>
+- <https://albertlauncher.github.io/>
+  - copyq
+  - <https://claude.ai/new?q=hello>
+  - Snipets spiac jako baze promptow do uzycia z claude
+- htop 
+- ranger
+- <https://github.com/archlinux/archinstall>
+- yt-dlp
+  - 
 
 ## Docs
 
@@ -81,3 +64,9 @@
 - https://github.com/webpro/awesome-dotfiles
 - https://martinovic.blog/post/home_git/
 - https://osworld.pl/cpu-g-czyli-cpu-z-dla-linuksa/
+- <https://www.linuxuprising.com/2019/11/how-to-bind-mouse-buttons-to-keyboard.html> przypisanie myszy do ekranu
+
+## Thunderbird 
+
+- <https://addons.thunderbird.net/pl/thunderbird/addon/importexporttools-ng/?src=hp-dl-mostpopular>
+  

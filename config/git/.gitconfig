@@ -1,27 +1,56 @@
-[alias]
-	i = init
-	s = status
-	p = push
-	a = add
-	c = commit -am
-	b = branch
-
-	ra = remote add
-	po = push origin
-	co = checkout
-
-	pom = push origin master
-	info = remote show origin
-
-	reb = rebase origin/master
-	up = commit --amend
-
+# This is Git's per-user configuration file.
 [user]
 	email = "westscz@gmail.com"
 	name = Jaroslaw Piszczala
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[init]
+	defaultBranch = master
+[core]
+	editor = /usr/bin/vim
+[branch]
+	sort = -committerdate
+[diff]
+	algorithm = histogram
+[diff "sopsdiffer"]
+	textconv = sops -d
 [push]
 	default = simple
-[include]
-	path = ~/.gitconfig.local
+	autoSetupRemote = true
+[rebase]
+	autostash = true
+[merge]
+	conflictstyle = zdiff3
+[alias]
+	## alias config
+	# Get the current branch name (not so useful in itself, but used in
+	# other aliases)
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	## shortcuts
+	s = status
+
+	c = commit -am
+	ca = commit --amend --no-edit
+
+    rb = rebase origin/master
+	rbc = rebase --continue
+	ri = rebase -i origin/master
+
+	p = push
+	pf = push --force-with-leasea
+	co = checkout
+	b = checkout -b
+	save = git stash push -ma
+	rollback = restore --source origin/master
+	## commands
+	update = "!git checkout $1 && git pull && git rb && git pf && :"
+	master = "!git checkout master && git pull"
+	# westscz/ID-new-feature-implemented
+	# function based is better because of proper arguments usage
+	new = "!func() { git checkout -b westscz/$1;}; func"
+	# Push the current branch to the remote "origin", and set it to track
+	# the upstream branch
+	publish = "!git push -u origin $(git branch-name)"
+
 [includeIf "gitdir:~/second-brain/"]
 	path = .gitconfig-gitlab

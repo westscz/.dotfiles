@@ -3,6 +3,10 @@
 # GitPush - Git Helper
 # Source https://github.com/iiPlasma/dots/blob/master/bin/bin/gitpush
 
+COMMENT="${COMMENT:-'autopush'}"
+MASTER="$(git symbolic-ref refs/remotes/origin/HEAD | cut -d "/" -f4)"
+echo ${MASTER}
+
 # Check if there is unfetched online files
 echo -e "Checking if there is an unfetched file from the repository"
 git pull
@@ -10,16 +14,12 @@ git pull
 # Add every files in the project folder
 git add --all .
 
-# Add commit message
-echo "Write your commit comment!"
-read COMMENT </dev/tty
-
 # Add some details to commit message
 TIME=$(date +"%a %D")
-echo "${TIME}: $COMMENT"
-git commit -m "${TIME}: $COMMENT"
+echo "${TIME}: ${COMMENT}"
+git commit -m "${TIME}: ${COMMENT}"
 
 # # Push the local files and tags to github
-git push origin --tags
-git push -u origin master
+git push origin
+git push -u origin ${MASTER}
 echo "Done!"
