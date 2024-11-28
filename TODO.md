@@ -52,11 +52,11 @@
   - copyq
   - <https://claude.ai/new?q=hello>
   - Snipets spiac jako baze promptow do uzycia z claude
-- htop 
+- htop
 - ranger
 - <https://github.com/archlinux/archinstall>
 - yt-dlp
-  - 
+  -
 
 ## Docs
 
@@ -66,7 +66,6 @@
 - https://osworld.pl/cpu-g-czyli-cpu-z-dla-linuksa/
 - <https://www.linuxuprising.com/2019/11/how-to-bind-mouse-buttons-to-keyboard.html> przypisanie myszy do ekranu
 
-## Thunderbird 
+## Thunderbird
 
 - <https://addons.thunderbird.net/pl/thunderbird/addon/importexporttools-ng/?src=hp-dl-mostpopular>
-  
