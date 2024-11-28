@@ -10,6 +10,12 @@ endif
 
 all: push
 
+.scratch:
+> mkdir .scratch
+
+.scratch/.ready: .scratch
+> touch .ready
+
 .PHONY: push
 push:
 > scripts/gitpush
