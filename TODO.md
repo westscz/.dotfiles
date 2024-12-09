@@ -69,3 +69,8 @@
 ## Thunderbird
 
 - <https://addons.thunderbird.net/pl/thunderbird/addon/importexporttools-ng/?src=hp-dl-mostpopular>
+
+## GRUB autoswitch
+
+- <https://danb.me/blog/grub-usb/>
+- <https://hackaday.io/project/179539-hardware-boot-selection-switch>
