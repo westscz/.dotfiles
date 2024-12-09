@@ -74,3 +74,4 @@
 
 - <https://danb.me/blog/grub-usb/>
 - <https://hackaday.io/project/179539-hardware-boot-selection-switch>
+- GRUB2 is needed
