@@ -1,0 +1,15 @@
+#!/usr/bin/sh
+#
+# Changes default boot option if specific USB filesystem is plugged in.
+# Change the ID at the end of the search command below to be the
+# UUID of the filesystem on the USB.
+# Change the 4 at the end of the set command to change the boot entry
+# that should be made default when the USB is plugged in.
+cat <<'EOF'
+search --no-floppy --fs-uuid --set usbswitch 184C-5E18
+
+if [ "$usbswitch" ] ; then
+  set default=2
+fi
+EOF
+
